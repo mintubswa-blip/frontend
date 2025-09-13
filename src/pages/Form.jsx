@@ -738,7 +738,7 @@ const Form = () => {
       }
 
       // ---- Submit to the API ----
-      const response = await fetch("http://localhost:5000/createApplication", {
+      const response = await fetch("https://server.valmodeliver.org.in/api/createApplication", {
         method: "POST",
         body: formDataToSend, // no Content-Type header (browser sets it)
       });
